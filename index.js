@@ -5,7 +5,8 @@ const app = express()
 app.set("view engine", "ejs")
 
 app.get("/",(req,res) =>{
-    res.send("Hello World!")
+    //Não precisa colocar o caminho inteiro, ele ja busca direto na pasta views
+    res.render("index")
 })
 
 app.listen(8080, console.log("app rodando"))
